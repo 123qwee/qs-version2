@@ -1,0 +1,177 @@
+/** 三栏式布局头部样式 */
+
+.header {
+  height: 140px;
+  will-change: margin;
+  -webkit-transition: margin 280ms;
+  -moz-transition: margin 280ms;
+  transition: margin 280ms;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.header:before,
+.header:after {
+  content: " ";
+  display: table;
+}
+
+.header-content {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/** 头部标题栏样式 */
+
+.header-top {
+  padding: 0 10px;
+  border: 0;
+  box-shadow: 0 0 6px #324157;
+}
+
+.header-title {
+  height: 40px;
+  width: 500px;
+  margin: 0 auto;
+  font: 500 20px/40px SourceHanSansK-Medium, sans-serif;
+  letter-spacing: 10px;
+  cursor: default;
+  text-align: center;
+}
+
+.header-toolbar {
+  position: absolute;
+  float: right;
+  top: 0px;
+  right: 10px;
+  height: 50px;
+  line-height: 50px;
+}
+
+.headerbar {
+  line-height: 40px;
+  vertical-align: middle;
+}
+
+.uk-navbar {
+  border-radius: 0;
+}
+
+.header-logo {
+  float: left;
+}
+
+/** logo 区域样式 */
+
+.header-logo {
+  float: left;
+  line-height: 48px;
+  margin-right: 54px;
+  display: block;
+}
+
+.header-logo>a {
+  display: inline-block;
+  line-height: 48px;
+}
+
+.header-logo>a img {
+  max-height: 120px;
+  width: auto;
+}
+
+.header-logo>a:hover {
+  text-decoration: none
+}
+
+/** 头部菜单栏样式 */
+
+.header-menu {
+  border: 0px;
+  padding: 0 20px;
+  height: 100px;
+  background-image: url("../../assets/images/header/bg1920.png");
+}
+
+@media screen and ( min-width: 1921px) {
+  .header-menu {
+    background-image: url("../../assets/images/header/top_bg.png");
+  }
+}
+
+/** 头部工具栏样式 */
+
+.headerbar-user-img {
+  height: 30px;
+  width: 30px;
+  border-radius: 100px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.headerbar-user-name {
+  font-size: 15px;
+  margin-right: 20px;
+  vertical-align: middle;
+}
+
+.headerbar-action-img {
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+.el-popover .uk-nav-dropdown>li>a:focus,
+.uk-nav-dropdown>li>a:hover {
+  font-size: 14px;
+  color: #3498db;
+  font-weight: bold;
+  background-color: #eff3f5;
+  /* background-color: #009788; */
+}
+
+.popover-submenu {
+  /* padding: 5px; */
+  cursor: pointer;
+}
+
+.popover-submenu:hover {
+  background-color: #ededed;
+}
+
+.popover-submenu img {
+  margin-right: 10px;
+}
+
+.popover-submenu span {
+  vertical-align: middle;
+}
+
+.header-uk-menu {
+  z-index: 90;
+  right: 0;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.header-uk-menu li a {
+  display: block;
+  height: 40px;
+  font-size: 14px;
+  color: #7a8e9d;
+  line-height: 40px;
+  background-color: #fff;
+  padding: 0 10px;
+}
+
+.header-uk-menu li a i {
+  float: left;
+  margin-right: 6px;
+  font-size: 18px;
+  color: #647587;
+  line-height: 40px;
+}
+
+.headerbar-popover {
+  padding: 0;
+  border-radius: 0;
+}

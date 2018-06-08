@@ -1,0 +1,6 @@
+/* 列表单元格边距缩短 */
+
+.el-cell-small>div {
+  padding-left: 5px !important;
+  padding-right: 5px !important;
+}

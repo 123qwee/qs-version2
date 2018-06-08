@@ -1,0 +1,189 @@
+// 设置宽度
+$width:290px;
+.business-page {
+    overflow: hidden;
+    width: $width;
+    height: 100%;
+    background-color: #ffffff;
+    z-index: 2;
+    padding: 15px;
+    hr{
+        margin: 10px 0;
+    }
+}
+
+.back {
+    cursor: pointer;
+    height: 60px;
+    box-sizing: content-box;
+    border-bottom: 1px solid #e4e6e7;
+    transition: all 0.4s;
+    &:hover {
+      background: rgba(214, 214, 214, 0.4)
+    }
+    div {
+      font-size: 14px;
+      font-weight: normal;
+      font-stretch: normal;
+      margin-left: 10px;
+      letter-spacing: 0px;
+      height: 100%;
+      line-height: 60px;
+    }
+    img {
+      margin-right: 10px;
+      transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      /* IE 9 */
+      -moz-transform: rotate(180deg);
+      /* Firefox */
+      -webkit-transform: rotate(180deg);
+      /* Safari 和 Chrome */
+      -o-transform: rotate(180deg);
+      /* Opera */
+    }
+  }
+
+.business-back-title {
+    color: rgba(0, 0, 0, .8);
+    cursor: pointer;
+}
+
+.business-name {
+    font-size: 18px;
+    font-weight: 400;
+    padding: 15px 0 5px 0;
+}
+
+.business-pane {
+    height: calc(100% - 205px);
+    .flex div{
+        padding: 2px 0;
+    }
+}
+
+.business-top {
+    margin-top: 10px;
+}
+
+.result {
+    position: relative;
+    width: 100%;
+    height: calc(100% - 100px);
+    .item_content {
+      cursor: pointer;
+      padding: 10px 8px;
+      margin-left: 0px;
+      margin-right: 0px;
+      &:hover {
+        background-color: #f0f5fa;
+      }
+    }
+    .pin {
+      position: relative;
+      display: inline-block;
+      zoom: 1;
+      *display: inline;
+      width: 20px;
+      vertical-align: top;
+      &::after {
+        font-size: 14px;
+        width: 20;
+        content: attr(data-fold);
+        color: black;
+        position: absolute;
+        letter-spacing: 0px;
+        left: 10px;
+        top: 0px;
+        height: 20px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        box-sizing: border-box;
+        z-index: 999;
+      }
+      .pin_num {
+        font-size: 14px;
+        color: white;
+        position: absolute;
+        letter-spacing: 0px;
+        left: 6px;
+        top: 2px;
+        height: 20px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        box-sizing: border-box;
+      }
+    }
+    .result_content {
+      display: inline-block;
+      zoom: 1;
+      *display: inline;
+      vertical-align: top;
+      width: calc(100% - 145px);
+      margin-left: 15px;
+      .content_flex {
+        display: flex;
+        flex-direction: column;
+        div {
+          font-weight: normal;
+          font-stretch: normal;
+          letter-spacing: 0px;
+          color: #666666;
+        }
+        div:nth-child(1) {
+          font-weight: normal;
+          font-stretch: normal;
+          letter-spacing: 0px;
+          color: #2070e5;
+        }
+      }
+    }
+    .result_image {
+      cursor: pointer;
+      position: relative;
+      display: inline-block;
+      zoom: 1;
+      *display: inline;
+      width: 100px;
+      .title {
+        position: absolute;
+        bottom: 0px;
+        height: 22px;
+        line-height: 22px;
+        font-size: 0.8rem;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        text-align: center;
+        color: white;
+      }
+    }
+  }
+
+.business-case-name {
+    font-size: 16px;
+    color: #2070e5
+}
+
+.key-people-scroll {
+    height: calc(100% - 26px);
+}
+
+/** 按钮组样式 */
+.business-group-but [type="button"]{
+    width: 94px;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    color: #000000;
+    background-color: #E4E6E7;
+    &:hover {
+        color: #000000;
+        background-color: #E4E6E7;
+    };
+    &:focus {
+        color: #ffffff;
+        background-color: #2070e5;
+    }
+}

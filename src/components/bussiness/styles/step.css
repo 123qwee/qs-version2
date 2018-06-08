@@ -1,0 +1,105 @@
+.step-wrap {
+  width: 100%;
+  height: 100%;
+}
+
+.step-item {
+  position: relative;
+  vertical-align: top;
+  margin-right: 0;
+}
+
+.step-item-head {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: transparent;
+  line-height: 40px;
+  font-size: 20px;
+  vertical-align: top;
+  transition: all 50ms;
+  text-align: center;
+  display: inline-block;
+  border: solid 2px #fff;
+  color: #fff;
+  background-color: #20a0ff;
+  border-color: #20a0ff;
+}
+
+.step-item-line {
+  position: absolute;
+  width: 2px;
+  top: 44px;
+  margin-right: 0px;
+  bottom: 0;
+  left: 22px;
+  box-sizing: border-box;
+  border-color: #bfcbd9;
+  background-color: #bfcbd9;
+}
+
+.step-line-inner {
+  display: block;
+  border-style: solid;
+  border-color: inherit;
+  box-sizing: border-box;
+  transition: all 50ms;
+  transition-delay: -150ms;
+  border-width: 0px;
+  width: 0;
+  height: 0%;
+}
+
+.step-title {
+  display: block;
+  font-size: 14px;
+  line-height: inherit;
+}
+
+.step-item-main {
+  white-space: normal;
+  text-align: left;
+  width: calc(100% - 60px);
+  display: inline-block;
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.step-wrap .step-item:last-child .step-item-line {
+  display: none;
+}
+
+.step-title-1 {
+  background-color: #3499da;
+  border-color: #3499da;
+}
+
+.step-title-2 {
+  background-color: #e6a23c;
+  border-color: #e6a23c;
+}
+
+.step-title-3 {
+  background-color: #ccff99;
+  border-color: #ccff99;
+}
+
+.step-title-4 {
+  background-color: #67c23a;
+  border-color: #67c23a;
+}
+
+.step-title-5 {
+  background-color: #ff9933;
+  border-color: #ff9933;
+}
+
+.step-title-6 {
+  background-color: #bdbd1e;
+  border-color: #bdbd1e;
+}
+
+.step-title-7 {
+  background-color: #66cccc;
+  border-color: #66cccc;
+}

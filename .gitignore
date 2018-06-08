@@ -1,0 +1,10 @@
+.deploy_git/
+.DS_Store
+dist/
+node_modules/
+*.rar
+
+package-lock.json
+*.zip
+src/assets/images/main/heat.png
+yarn.lock

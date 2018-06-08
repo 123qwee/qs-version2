@@ -1,0 +1,92 @@
+.sidebar {
+  height: 100%;
+  -webkit-flex-shrink: 1;
+  -ms-flex-negative: 1;
+  flex-shrink: 1;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.14), 2px 4px 8px rgba(0, 0, 0, 0.28);
+}
+
+.sidebar-menu li {
+  width: 240px;
+  font-size: 16px;
+}
+
+/* 选中菜单高亮效果 */
+
+.is-menu-active {
+  color: rgb(255, 208, 75) !important;
+  background-color: rgb(50, 65, 87) !important;
+}
+
+/* .is-menu-active .sidemenu-title {
+    color: #ffffff !important;
+  } */
+
+.sidebar .el-menu-item.is-active {
+  background-color: #3e507f;
+  color: #ffffff;
+}
+
+.el-menu--horizontal.el-menu--dark .el-submenu .el-menu-item:hover,
+.el-menu--horizontal.el-menu--dark .el-submenu .el-submenu-title:hover,
+.el-menu-item:hover {
+  background-color: #124681;
+}
+
+/** 菜单处于收缩状态下样式 */
+
+.sidebar-collapse .el-menu-item .el-tooltip {
+  /* padding: 0 8px !important; */
+}
+
+.sidebar-collapse .el-submenu__title {
+  /* padding: 0 8px 0 18px !important; */
+}
+
+/* 防止滚动轴的样式文件导致Dom元素样式修改 */
+
+.sidebar-menu {
+  padding: 0 !important;
+}
+
+.sidemenu-title {
+  margin-left: 15px;
+}
+
+.sub-sidemenu-title {
+  margin-left: 33px;
+}
+
+/** 左侧菜单收缩与展开样式 */
+
+.sidemenu-tools {
+  float: right;
+  cursor: pointer;
+}
+
+.sidemenu-tools-left img {
+  will-change: transform;
+  -webkit-transition: all 2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 2s cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transform: rotate(0deg);
+  transform: rotate(0deg);
+}
+
+.sidemenu-tools-right img {
+  will-change: transform;
+  -webkit-transition: all 2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: all 2s cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+
+.sidemenu-top-title {
+  height: 16px;
+  color: white;
+  padding: 20px;
+  font-size: 18px;
+}
+
+.sidebar-collapse .sidemenu-top-text {
+  display: none;
+}

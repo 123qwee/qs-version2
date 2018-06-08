@@ -1,0 +1,145 @@
+/** 字体图标样式 */
+
+.md-icon {
+  cursor: pointer;
+  vertical-align: middle;
+}
+
+
+/** 子页面标题栏样式 */
+
+.mainbar-title {
+  padding: 0 10px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 14px;
+  letter-spacing: 2px;
+  color: #fff;
+  background-color: #2778b9;
+  border-bottom: 1px solid #d1dbe5;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+
+/* 分页插件的位置 */
+
+.main-page {
+  text-align: right;
+  padding: 6px 10px;
+  z-index: 1000;
+  position: relative;
+}
+
+
+/** 案卷操作弹出框样式 */
+
+.dlg-matter .el-row {
+  line-height: 36px;
+  padding: 5px 0;
+}
+
+.dlg-matter .el-dialog__body {
+  padding: 15px 20px;
+}
+
+
+/** 跑马灯图片 */
+
+.carousel-img-wrap img {
+  max-height: 100%;
+}
+
+.is-require {
+  color: red;
+  margin-left: -10px;
+  margin-right: 5px;
+}
+
+
+/** 表格内图片显示样式 */
+
+.media-object-wrap {
+  display: inline-block;
+  width: 100px;
+  height: 80px;
+  line-height: 80px;
+  text-align: center;
+  overflow: hidden;
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.media-object-wrap img {
+  cursor: pointer;
+  max-height: 100%;
+}
+
+.col-video-play {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1080;
+  cursor: pointer;
+  height: 32px;
+  width: 32px;
+  margin-left: -16px;
+  margin-top: -16px;
+}
+
+
+/** 滚动轴样式 */
+
+.vb>.vb-dragger {
+  z-index: 5;
+  width: 12px;
+  right: 0;
+}
+
+.vb>.vb-dragger>.vb-dragger-styler {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: rotate3d(0, 0, 0, 0);
+  transform: rotate3d(0, 0, 0, 0);
+  -webkit-transition: background-color 100ms ease-out, margin 100ms ease-out, height 100ms ease-out;
+  transition: background-color 100ms ease-out, margin 100ms ease-out, height 100ms ease-out;
+  background-color: rgba(51, 51, 51, 0.1);
+  margin: 5px 5px 5px 0;
+  border-radius: 20px;
+  height: calc(100% - 10px);
+  display: block;
+}
+
+.vb.vb-scrolling-phantom>.vb-dragger>.vb-dragger-styler {
+  background-color: rgba(51, 51, 51, 0.5);
+}
+
+.vb>.vb-dragger:hover>.vb-dragger-styler {
+  background-color: rgba(51, 51, 51, 0.2);
+  margin: 0px;
+  height: 100%;
+}
+
+.vb.vb-dragging>.vb-dragger>.vb-dragger-styler {
+  background-color: rgba(51, 51, 51, 0.8);
+  margin: 0px;
+  height: 100%;
+}
+
+.vb.vb-dragging-phantom>.vb-dragger>.vb-dragger-styler {
+  background-color: rgba(51, 51, 51, 0.5);
+}
+
+
+/** ElementUI 表格自适应样式 */
+
+@media screen and (max-width: 1600px) {
+  .cell-fit,
+  .header-cell-fit {
+    font-size: 12px;
+  }
+  .cell-fit .cell,
+  .header-cell-fit .cell {
+    line-height: 12px;
+  }
+}

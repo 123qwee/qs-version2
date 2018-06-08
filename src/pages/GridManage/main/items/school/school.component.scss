@@ -1,0 +1,118 @@
+// 设置宽度
+$width:320px;
+.school_border {
+  overflow: hidden;
+  width: $width;
+  height: 100%;
+  background-color: #ffffff;
+  z-index: 2;
+  .query {
+    margin: 10px;
+    margin-top: 20px;
+  }
+  .result {
+    position: relative;
+    width: 100%;
+    height: calc(100% - 100px);
+    .item_content {
+      cursor: pointer;
+      padding: 10px 8px;
+      margin-left: 0px;
+      margin-right: 0px;
+      &:hover {
+        background-color: #f0f5fa;
+      }
+    }
+    .pin {
+      position: relative;
+      display: inline-block;
+      zoom: 1;
+      *display: inline;
+      width: 20px;
+      vertical-align: top;
+      &::after {
+        font-size: 14px;
+        width: 20;
+        content: attr(data-fold);
+        color: black;
+        position: absolute;
+        letter-spacing: 0px;
+        left: 10px;
+        top: 0px;
+        height: 20px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        box-sizing: border-box;
+        z-index: 999;
+      }
+      .pin_num {
+        font-size: 14px;
+        color: white;
+        position: absolute;
+        letter-spacing: 0px;
+        left: 6px;
+        top: 2px;
+        height: 20px;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        box-sizing: border-box;
+      }
+    }
+    .result_content {
+      display: inline-block;
+      zoom: 1;
+      *display: inline;
+      vertical-align: top;
+      width: calc(100% - 145px);
+      margin-left: 15px;
+      .content_flex {
+        display: flex;
+        flex-direction: column;
+        div {
+          font-weight: normal;
+          font-stretch: normal;
+          letter-spacing: 0px;
+          color: #666666;
+          padding-bottom: 3px;
+        }
+        div:nth-child(1) {
+          font-weight: normal;
+          font-stretch: normal;
+          letter-spacing: 0px;
+          color: #2070e5;
+          padding-bottom: 3px;
+        }
+      }
+    }
+    .result_image {
+      cursor: pointer;
+      position: relative;
+      display: inline-block;
+      zoom: 1;
+      *display: inline;
+      width: 100px;
+      .title {
+        position: absolute;
+        bottom: 0px;
+        height: 22px;
+        line-height: 22px;
+        font-size: 0.8rem;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        text-align: center;
+        color: white;
+      }
+    }
+  }
+  input {
+    height: 30px !important;
+  }
+  .pagination {
+    height: 27px;
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+  }
+}

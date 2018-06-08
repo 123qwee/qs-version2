@@ -1,0 +1,393 @@
+/** 基础样式 */
+
+html {
+  width: 100%;
+  height: 100%;
+  background: #ececec;
+  font-family: "Helvetica Neue", Helvetica, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "微软雅黑", Arial, sans-serif !important;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+#app {
+  width: 100%;
+  height: 100%;
+  /** 最低适配1366*768的分辨率，去除浏览器Tab栏和书签栏，高度为620px */
+  min-width: 1366px;
+  min-height: 620px;
+  position: relative;
+  overflow: hidden;
+}
+
+
+/** 通用按钮样式 */
+
+.btn-common {
+  display: inline-block;
+  border: none;
+  border-radius: 2px;
+  letter-spacing: 2px;
+  font-weight: 400;
+  text-align: center;
+  cursor: pointer;
+  /*禁止选择文字*/
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.btn-nopad {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.btn-plain {
+  background-color: transparent;
+  color: #3499da;
+}
+
+.btn-plain:hover,
+.btn-plain:focus {
+  background-color: transparent;
+  color: #3499da;
+}
+
+.btn-plain-active {
+  color: #fa5555;
+  background-color: transparent;
+  border-bottom: solid 2px #fa5555;
+}
+
+.btn-plain-active:hover,
+.btn-plain-active:focus {
+  color: #fa5555;
+  background-color: transparent;
+  border-bottom: solid 2px #fa5555;
+}
+
+.btn-extend {
+  width: 80%;
+}
+
+
+/** 保存按钮样式 */
+
+.btn-ok {
+  color: #fff;
+  background-color: #3499da;
+  border-color: #3499da;
+}
+
+.btn-ok:hover,
+.btn-ok:focus {
+  color: #fff;
+  background-color: #49a3de!important;
+  transition: background-color 0.3s;
+  border-color: #49a3de;
+}
+
+
+/** 驳回按钮样式 */
+
+.btn-back {
+  color: #fff;
+  background-color: #1abc9c;
+  border-color: #1abc9c;
+}
+
+.btn-back:hover,
+.btn-back:focus {
+  color: #fff;
+  background-color: #1bcaa7!important;
+  transition: background-color 0.3s;
+  border-color: #1bcaa7;
+}
+
+
+/** 取消、重置、清空按钮样式 */
+
+.btn-cancel {
+  color: #2c3e50;
+  background-color: #e4e9ed;
+}
+
+.btn-cancel:hover,
+.btn-cancel:focus {
+  background-color: #b8c5cf;
+  color: #f4f7f8;
+  transition: background-color 0.3s;
+  border: none;
+}
+
+
+/** 查询按钮样式 */
+
+.btn-query {
+  background-color: #01a147;
+  border-color: #01a147;
+  color: #ffffff;
+}
+
+.btn-query:focus,
+.btn-query:hover {
+  background-color: #01c100;
+  border-color: #01c100;
+  color: #ffffff;
+}
+
+
+/** 查看按钮样式 */
+
+.btn-view {
+  background: #009788;
+  border-color: #009788;
+  color: #fff;
+}
+
+.btn-view:focus,
+.btn-view:hover {
+  background-color: #096;
+  border-color: #096;
+  color: #ffffff;
+}
+
+
+/** 布局行样式 */
+
+.fast-row {
+  padding: 10px;
+  line-height: 36px;
+}
+
+.row-padding-ud {
+  padding: 5px 0;
+  line-height: 36px;
+}
+
+
+/** 列表内边距 */
+
+
+/* .el-table td, .el-table th{
+    padding: 5px 0;
+} */
+
+
+/** 标签页内容大小布局样式 */
+
+.content .el-tabs__content {
+  height: calc(100% - 55px);
+  padding-top: 15px;
+}
+
+.list {
+  height: 100%;
+}
+
+.content .el-tabs__content {
+  padding-bottom: 0px;
+}
+
+
+/* tab内容页总高度 */
+
+.tab-list-height {
+  height: 100%;
+}
+
+
+/* 结果列表总高度 */
+
+.tab-list-height .content-list {
+  height: calc(100% - 50px);
+}
+
+
+/* 表格高度 */
+
+.tab-list-height .table-list {
+  height: calc(100% - 95px);
+  /* height: calc(100% - 40px); */
+}
+
+.tab-list-height .mainbar-title {
+  display: -webkit-flex;
+  align-items: center;
+}
+
+
+/* 表格标题颜色 */
+
+.tab-list-height .table-list .el-table th.is-leaf {
+  color: #000;
+}
+
+
+/* 宽度为82px */
+
+.width-82 {
+  width: 82px;
+}
+
+.width-82+div,
+.width-82+span {
+  width: calc(100% - 82px);
+}
+
+
+/* 宽度为97px */
+
+.width-97 {
+  width: 97px;
+}
+
+.width-97+div,
+.width-97+span {
+  width: calc(100% - 97px);
+}
+
+
+/* 宽度为115px */
+
+.width-115 {
+  width: 115px;
+}
+
+.width-115+div,
+.width-115+span {
+  width: calc(100% - 115px);
+}
+
+
+/* 宽度为120px */
+
+.width-120 {
+  width: 120px;
+}
+
+.width-120+div,
+.width-120+span {
+  width: calc(100% - 120px);
+}
+
+
+/* 宽度为130px */
+
+.width-130 {
+  width: 130px;
+}
+
+.width-130+div,
+.width-130+span {
+  width: calc(100% - 130px);
+}
+
+
+/* 宽度为138px */
+
+.width-138 {
+  width: 138px;
+}
+
+.width-138+div,
+.width-138+span {
+  width: calc(100% - 138px);
+}
+
+
+/* 宽度为143px */
+
+.width-143 {
+  width: 143px;
+}
+
+.width-143+div,
+.width-143+span {
+  width: calc(100% - 143px);
+}
+
+
+/* 宽度为167px */
+
+.width-167 {
+  width: 167px;
+}
+
+.width-167+div,
+.width-167+span {
+  width: calc(100% - 167px);
+}
+
+.txt-right {
+  text-align: right;
+}
+
+.txt-left {
+  text-align: left;
+}
+
+.txt-center {
+  text-align: center;
+}
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+.line-hei-32 {
+  line-height: 32px;
+}
+
+.line-hei-40 {
+  line-height: 40px;
+}
+
+/** 地图测量工具样式 */
+
+.tooltip {
+  position: relative;
+  white-space: nowrap;
+  background-color:rgba(22,22,22,0.6);
+  color:white;
+  height:20px;
+  line-height:20px;
+  padding:6px;
+  border-radius:15px;
+}
+
+.tooltip-measure {
+  opacity: 1;
+  font-weight: bold;
+}
+
+.tooltip-static {
+  background-color: #ffcc33;
+  color: black;
+  border: 1px solid white;
+}
+
+.tooltip-measure:before,
+.tooltip-static:before {
+  border-top: 6px solid rgba(0, 0, 0, 0.5);
+  border-right: 6px solid transparent;
+  border-left: 6px solid transparent;
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  margin-left: -7px;
+  left: 50%;
+}
+
+.tooltip-static:before {
+  border-top-color: #ffcc33;
+}
+

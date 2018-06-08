@@ -1,0 +1,81 @@
+.header-menu-content {
+  display: table-row;
+  font-family: 微软雅黑;
+  font-weight: bold;
+  font-size: 22px;
+  text-align: center;
+  color: rgb(0, 38, 9);
+  padding: 0px 33px;
+}
+
+.header-menu-control {
+  position: relative;
+  /*bottom: 80px;*/
+  cursor: pointer;
+  margin-top: 37.5px;
+}
+
+.header-menu-left {
+  float: left;
+  margin-left: -42px;
+}
+
+.header-menu-right {
+  float: right;
+  margin-right: -42px;
+}
+
+.header-menu-slider {
+  overflow: hidden;
+  min-width: 100px;
+  float: left;
+}
+
+.header-menu-slider ul {
+  list-style: none;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  will-change: margin;
+  -webkit-transition: margin 280ms;
+  transition: margin 280ms;
+  max-height: 100px;
+}
+
+.slider-menu {
+  /*display: inline-block;*/
+  float: left;
+  cursor: pointer;
+  height: 100px;
+  width: 120px;
+}
+
+.slider-menu:hover {
+  background-image: url('../../assets/images/header/btn_menu_selected.png');
+  /*background-color: rgba(18, 84, 150, 0.5);*/
+}
+
+.slider-menu-selected {
+  background-image: url('../../assets/images/header/btn_menu_selected.png');
+}
+
+.slider-menu img {
+  /* height: 120px; */
+}
+
+.slider-menu-caption {
+  position: relative;
+  margin-top: -35px;
+  color: #fff;
+  font-family: 'SourceHanSansK-Medium';
+  /*color: #002609;*/
+  font-weight: 500;
+  font-size: 18px;
+  letter-spacing: 1px;
+  text-align: center;
+}
+
+.slider-menu-caption-black {
+  color: #002609;
+  font-weight: 700;
+}

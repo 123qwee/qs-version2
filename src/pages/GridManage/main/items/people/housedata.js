@@ -1,0 +1,80 @@
+export const housedata = [{
+    value: '平房',
+    label: '平房'
+}, {
+    value: '楼房',
+    label: '楼房'
+}];
+
+// cz代表常驻人口，wz代表未住房,ld代表流动人口
+export const houseLoucengData = [{
+    id: '1',
+    name: '0101',
+    type: 'cz',
+    count: 3
+}, {
+    id: '2',
+    name: '0102',
+    type: 'cz',
+    count: 3
+}, {
+    id: '3',
+    name: '0103',
+    type: 'wz',
+    count: 3
+}, {
+    id: '1',
+    name: '0104',
+    type: 'ld',
+    count: 3
+}, {
+    id: '1',
+    name: '0105',
+    type: 'ld',
+    count: 3
+}, {
+    id: '1',
+    name: '0106',
+    type: 'cz',
+    count: 3
+}, {
+    id: '1',
+    name: '0107',
+    type: 'cz',
+    count: 3
+}, {
+    id: '1',
+    name: '0108',
+    type: 'cz',
+    count: 3
+}, {
+    id: '1',
+    name: '0109',
+    type: 'cz',
+    count: 3
+}, {
+    id: '1',
+    name: '0110',
+    type: 'ld',
+    count: 3
+}, {
+    id: '1',
+    name: '0111',
+    type: 'cz',
+    count: 3
+}, {
+    id: '1',
+    name: '0112',
+    type: 'cz',
+    count: 3
+}, {
+    id: '1',
+    name: '0113',
+    type: 'wz',
+    count: 3
+}, {
+    id: '1',
+    name: '0114',
+    type: 'cz',
+    count: 3
+}];

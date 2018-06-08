@@ -1,0 +1,185 @@
+// 设置宽度
+$width:320px;
+.people_info_height {
+  min-height: 600px;
+}
+
+.people_border {
+  width: $width;
+  background-color: #ffffff;
+  z-index: 2;
+  height: 100%;
+  .margin_border {
+    margin: 10px;
+  }
+  .back {
+    cursor: pointer;
+    height: 60px;
+    box-sizing: content-box;
+    border-bottom: 1px solid #e4e6e7;
+    transition: all 0.4s;
+    &:hover {
+      background: rgba(214, 214, 214, 0.4)
+    }
+    div {
+      font-size: 14px;
+      font-weight: normal;
+      font-stretch: normal;
+      margin-left: 10px;
+      letter-spacing: 0px;
+      height: 100%;
+      line-height: 60px;
+    }
+    img {
+      margin-right: 10px;
+      transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      /* IE 9 */
+      -moz-transform: rotate(180deg);
+      /* Firefox */
+      -webkit-transform: rotate(180deg);
+      /* Safari 和 Chrome */
+      -o-transform: rotate(180deg);
+      /* Opera */
+    }
+  }
+  .content {
+    margin-top: 14px;
+    margin-left: 12px;
+    margin-right: 4px;
+    color: #747474;
+    .title {
+      color: black;
+      font-size: 18px;
+    }
+  }
+  .el-row {
+    margin-bottom: 5px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &:nth-child(1) {
+      margin-bottom: 10px;
+    }
+    &:nth-child(2) {
+      margin-bottom: 20px;
+    }
+  }
+  .split_row {
+    margin-top: 10px;
+    height: 1px;
+    background-color: #e4e6e7;
+    width: 100%;
+  }
+  .danyuan {
+    margin-top: 10px;
+    .happy-scroll-content {
+      border-bottom: 0 !important;
+    }
+    .happy-scroll-container {
+      height: auto !important;
+      width: unset;
+    }
+    .item {
+      text-align: center;
+      display: inline-block;
+      zoom: 1;
+      *display: inline;
+      cursor: pointer;
+      position: relative;
+      line-height: 30px;
+      margin-left: 2px;
+      margin-right: 2px;
+      background-color: #e4e6e7;
+      height: 30px;
+      width: 70px;
+      color: black;
+    }
+    .select {
+      background-color: #2070e5;
+      color: white;
+    }
+  }
+  .flex_row {
+    display: inline-flex;
+    position: relative;
+  }
+  .lc {
+    margin-top: 10px;
+    .rk_type {
+      margin-left: 10px;
+      margin-right: 10px;
+      img {
+        margin-top: -2px;
+        vertical-align: middle;
+        font: 0;
+        height: 16px;
+        width: 16px;
+      }
+      .cz {
+        color: #11a3ff;
+      }
+      .ld {
+        color: #faa52c;
+      }
+      .wzr {
+        color: #ff703a;
+      }
+    }
+  }
+  .lc_select {
+    margin-top: 10px;
+    .lc_number {
+      position: relative;
+      display: inline-block;
+      zoom: 1;
+      *display: inline;
+      height: 100%;
+      .scroll {
+        div {
+          cursor: pointer;
+          margin-top: 4px;
+          line-height: 26px;
+          text-align: center;
+          width: 45px;
+          height: 26px;
+          color: #666666;
+          background-color: #e4e6e7;
+        }
+        .select {
+          color: white;
+          background-color: #2070e5;
+        }
+      }
+    }
+    .fw_select {
+      position: relative;
+      display: inline-block;
+      zoom: 1;
+      *display: inline;
+      width: calc(100% - 50px);
+      height: 100%;
+      background-color: #f0f5fa;
+      height: 100%;
+      vertical-align: top;
+      .flex {
+        margin-top: 15px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        height: 100%;
+        width: 100%;
+      }
+      .house {
+        color: #747474;
+        margin-top: 8px;
+        cursor: pointer;
+        width: 25%;
+        text-align: center;
+        &:hover {
+          background-color: rgba(214, 214, 214, 0.4);
+        }
+      }
+    }
+  }
+}
